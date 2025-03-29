@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Move | Catan</title>
     <link href="styles/catan-styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -20,13 +21,10 @@
             </nav>
         </div>
         <div id="search">
-            <div class="flex border-2 border-blue-500 overflow-hidden max-w-md mx-auto">
-                <input type="email" placeholder="Search Something..."
-                  class="w-full outline-none bg-white text-gray-600 text-sm px-4 py-3" />
-                <button type='button' class="flex items-center justify-center bg-[#007bff] px-5 text-sm text-white">
-                  Search
-                </button>
-            </div>
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         </div>
     </header>
     <main>

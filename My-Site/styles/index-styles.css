@@ -63,9 +63,9 @@ header{
     font-size: 1.5em;
 }
 
-#search{
-    grid-column: 3;
-    padding-top: 60px;
+#search {
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 #hero-section{
