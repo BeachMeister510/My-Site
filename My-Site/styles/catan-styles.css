@@ -51,9 +51,27 @@ header{
 }
 #game-links{
     grid-column: 2;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-evenly;
-    padding-top: 60px;
+    align-items: center;
+    height: 100%;
+}
+
+#link1{
+    grid-column: 1;
+}
+
+#link2{
+    grid-column: 2;
+}
+
+#link3{
+    grid-column: 3;
+}
+
+#link4{
+    grid-column: 4;
 }
 
 #game-links a{
@@ -61,11 +79,19 @@ header{
     text-decoration: none;
     font-family: Quantico, Alegreya, Helvetica;
     font-size: 1.5em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+#game-links a:hover{
+    background-color: #002E4D;
+    color: #F4C29F;
+}
 #search {
     margin: 0 auto;
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
 #catan-card{
@@ -77,6 +103,8 @@ header{
     width: 75%;
     background-color: #002E4D;
     color: #E06638;
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, .8);
 }
 
 #catan-card img{
@@ -84,6 +112,7 @@ header{
     grid-column: 1;
     grid-row: 1 / span 2;
     padding: 20px;
+    border-radius: 30px;
 }
 
 #catan-card h2{
@@ -130,12 +159,26 @@ header{
     justify-content: space-evenly;
 }
 
+.game-peice{
+    background-color: #E06638;
+    color: #F4C29F;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, .3);
+}
+
 .game-peice img {
     width: 250px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, .3);
 }
 
 .game-peice p{
     font-size: 1.5em;
+}
+
+#island-edge{
+    justify-self: center;
 }
 
 #island-edge img{
@@ -155,6 +198,10 @@ header{
  grid-row: 1;
  grid-column: 1 / span 2;
  font-size: 2.5em;
+}
+#how-to-play-cards div{
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, .3);
 }
 
 div h2 {
@@ -193,10 +240,18 @@ div p{
     margin-right: 400px;
 }
 
-
-
 footer{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     color: #002E4D;
+    margin-top: 50px;
+    background-color: #F4C29F;
+    height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer h4{
+    padding: 10px;
+    text-align: center;
 }
